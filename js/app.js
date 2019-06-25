@@ -75,13 +75,15 @@ app.service('GroceryService', function ($http) {
     // Defining function trash's bin
     groceryService.removeItem = function (entry) {
 
-        $http.get('data/delete_item.json', {id: entry.id})
+        $http.get('data/delete_item.json', {
+                id: entry.id
+            })
             .success(function (data) {
 
-                    if (data.status) {
+                if (data.status) {
                     var index = groceryService.groceryItems.indexOf(entry);
                     groceryService.groceryItems.splice(index, 1);
-                    }
+                }
             })
             .error(function () {
 
