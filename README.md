@@ -1,1 +1,1 @@
-# My first app using AngularJS >> [GroceryList](https://cunhaferreira.github.io/GroceryList/.)
+# My first app using AngularJS >> [GroceryList](https://cunhapaola.github.io/GroceryList/.)
